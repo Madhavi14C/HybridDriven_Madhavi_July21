@@ -16,7 +16,8 @@ public class PIM_EmployeeListTest extends TestBase {
 	public void setUp() {
 		menuPage = super.setup();
 	}
-@Test
+
+	@Test
 	public void employeeSearch() {
 		System.out.println("STEP - Navigate to PIM->Employee List");
 		menuPage.navigateTo("PIM->Employee List");
@@ -26,7 +27,8 @@ public class PIM_EmployeeListTest extends TestBase {
 		Assert.assertTrue(pim_EmployeeListPage.isEmployeeAdded("Sergei T Falin "));
 
 	}
-@AfterMethod
+
+	@AfterMethod
 	public void browserClose() {
 		super.browserClose();
 	}
